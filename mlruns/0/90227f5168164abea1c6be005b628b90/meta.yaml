@@ -1,0 +1,15 @@
+artifact_uri: file:///mnt/c/Users/gsemi/workspace/genre_classification/mlruns/0/90227f5168164abea1c6be005b628b90/artifacts
+end_time: 1655273695682
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+name: ''
+run_id: 90227f5168164abea1c6be005b628b90
+run_uuid: 90227f5168164abea1c6be005b628b90
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1655273694978
+status: 4
+tags: []
+user_id: g94

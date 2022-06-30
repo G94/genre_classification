@@ -18,9 +18,10 @@ def go(config: DictConfig):
     # Check which steps we need to execute
     if isinstance(config["main"]["execute_steps"], str):
         # This was passed on the command line as a comma-separated list of steps
+        print(config["main"]["execute_steps"])
         steps_to_execute = config["main"]["execute_steps"].split(",")
     else:
-        assert isinstance(config["main"]["execute_steps"], list)
+        # assert isinstance(config["main"]["execute_steps"], list)
         steps_to_execute = config["main"]["execute_steps"]
 
     # Download step
@@ -92,7 +93,7 @@ def go(config: DictConfig):
                 "train_data": "data_train.csv:latest",
                 "model_config": model_config,
                 "export_artifact": config["random_forest_pipeline"]["export_artifact"],
-                "random_seed":config["data"]["random_seed"],
+                "random_seed":config["main"]["random_seed"],
                 "val_size":config["data"]["test_size"],
                 "stratify":config["data"]["stratify"]
             },

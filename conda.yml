@@ -1,4 +1,4 @@
-name: download_data
+name: dr
 channels:
   - conda-forge
   - defaults

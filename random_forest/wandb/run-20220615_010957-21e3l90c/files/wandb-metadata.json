@@ -1,0 +1,37 @@
+{
+    "os": "Linux-5.10.60.1-microsoft-standard-WSL2-x86_64-with-glibc2.10",
+    "python": "3.8.13",
+    "heartbeatAt": "2022-06-15T06:10:00.041016",
+    "startedAt": "2022-06-15T06:09:57.827210",
+    "docker": null,
+    "gpu": "NVIDIA GeForce GTX 1650 with Max-Q Design",
+    "gpu_count": 1,
+    "cpu_count": 16,
+    "cuda": null,
+    "args": [
+        "--train_data",
+        "data_train.csv:latest",
+        "--model_config",
+        "/mnt/c/Users/gsemi/workspace/genre_classification/outputs/2022-06-15/01-09-54/random_forest_config.yml",
+        "--export_artifact",
+        "model_export",
+        "--random_seed",
+        "42",
+        "--val_size",
+        "0.3",
+        "--stratify",
+        "genre"
+    ],
+    "state": "running",
+    "program": "run.py",
+    "codePath": "random_forest/run.py",
+    "git": {
+        "remote": "git@github.com:G94/genre_classification.git",
+        "commit": "5f381d089bf9aaea3f8cf19511fb68ec0a9fc9a2"
+    },
+    "email": null,
+    "root": "/mnt/c/Users/gsemi/workspace/genre_classification",
+    "host": "Gipsy",
+    "username": "g94",
+    "executable": "/home/g94/miniconda3/envs/mlflow-259d53ab44a1e9011b0c64ae862f43343c0fc9e5/bin/python"
+}
